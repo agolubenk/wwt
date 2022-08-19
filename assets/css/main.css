@@ -3676,7 +3676,7 @@ blockquote span {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
-  border: 1px solid #eee;
+  border: 0px solid #eee;
 }
 
 .brand-list::before {
@@ -3684,18 +3684,18 @@ blockquote span {
   content: "";
   background: #eee;
   width: 100%;
-  height: 1px;
+  height: 0px;
   top: 50%;
 }
 
 .brand-list li {
-  -ms-flex-preferred-size: 33.33%;
-  flex-basis: 33.33%;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
 }
 
 .brand-list li a {
   display: block;
-  border-right: 1px solid #eee;
+  border-right: 0px solid #eee;
   text-align: center;
   height: 150px;
   line-height: 150px;
@@ -3732,7 +3732,7 @@ blockquote span {
 }
 
 .bg-color-white .brand-list li a {
-  border-right: 1px solid #eee;
+  border-right: 0px solid #eee;
 }
 
 .bg-color-white .brand-list li:nth-child(3) a {
@@ -4758,7 +4758,7 @@ blockquote span {
     display: none;
   }
   .brand-list li {
-    border: 1px solid #eee;
+    border: 0px solid #eee;
   }
   .brand-list li a {
     border: none;
