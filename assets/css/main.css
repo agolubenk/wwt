@@ -959,7 +959,6 @@ ol {
   font-size: 33px;
   margin-bottom: 18px;
   line-height: 50px;
-  text-transform: capitalize;
   position: relative;
   font-weight: 700;
   padding-bottom: 14px;
@@ -1143,7 +1142,6 @@ ol {
 
 .button .btn {
   display: inline-block;
-  text-transform: capitalize;
   font-size: 14px;
   font-weight: 600;
   padding: 15px 30px;
@@ -1548,7 +1546,6 @@ ol {
   transition: all 0.3s ease-out 0s;
   padding: 30px 0;
   position: relative;
-  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1801,7 +1798,6 @@ ol {
   display: block;
   font-size: 13px;
   font-weight: normal;
-  text-transform: capitalize;
   background: transparent;
   border-radius: 3px;
 }
@@ -5208,7 +5204,7 @@ blockquote span {
 }
 .free-version-banner-2 {
   position: relative;
-  background: #333;
+  background: #aaa;
   background-image: url("../images/free-version/joinup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -5221,10 +5217,10 @@ blockquote span {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: #2a3a4a;
+  background-color: #f6f9fc;
   left: 0;
   top: 0;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 
 .free-version-banner-1 .section-title {
