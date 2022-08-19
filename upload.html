@@ -261,10 +261,10 @@
                         <p class="wow fadeInUp" data-wow-delay=".4s">Перетяните свои резюме, сертификаты и другую информацию, которую считаете важной, в поле ниже. Заполните форму. Мы молниеносно разбираем резюме и уточняем по актуальным вакансиям!</p>
                     </div>
                     <form action="/file-upload" class="dropzone mt-2 mb-3" style="" id="my-awesome-dropzone">
-                    <div class="dz-preview dz-file-preview" style="border-radius: 2em">
+                    <div class="dz-preview dz-file-preview" style="border-radius: 2em; height: 200px">
   <div class="dz-details" style="border-radius: 2em">
     <div class="dz-filename" style="border-radius: 2em"><span data-dz-name></span></div>
-    <div class="dz-size" data-dz-size style="border-radius: 2em"></div>
+    <div class="dz-size" data-dz-size style="border-radius: 2em;"></div>
     <img data-dz-thumbnail  style="border-radius: 2em" />
   </div>
   <div class="dz-success-mark"><span>✔</span></div>
@@ -272,7 +272,7 @@
   <div class="dz-error-message"><span data-dz-errormessage></span></div>
 </div>
                     </form>
-                                    <div class="form-check form-switch">
+                                    <div class="form-check form-switch" style="font-size: 16px">
                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Согласен на обработку персональных данных</label>
                 </div>
@@ -297,6 +297,13 @@
               </div>
             </div>
 
+            <div class="col-12">
+              <label for="vacancy" class="form-label">Желаемая вакансия</label>
+                <input type="text" class="form-control" id="vacancy" placeholder="Java разработчик" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+              </div>
+            </div>
             <div class="col-12">
               <label for="username" class="form-label">Telegram</label>
               <div class="input-group has-validation">
@@ -478,11 +485,11 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         });
     </script>
     <!-- ========================= Redirect to 101.html ========================= -->
-    <script type="text/javascript">
+  <!--  <script type="text/javascript">
         setTimeout(function(){
                 window.location.href = '101.html';
             }, 200);
-    </script>
+    </script> -->
 </body>
 
 </html>
