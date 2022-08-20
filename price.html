@@ -484,50 +484,41 @@
         <thead>
           <tr>
             <th style="width: 15%;">Тариф</th>
-            <th style="width: 55%;">Состав команды</th>
-            <th style="width: 15%;">Кол-во</th>
+            <th style="width: 64%;">Состав команды</th>
             <th style="width: 15%;">Цена (min)</th>
+            <th style="width: 6%;"><i class="bi bi-info fa-lg"></i></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row" class="text-start">Public</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Back-devs</th>
+            <td>2 - backend (middle) + 2 - backend (senior) + qa (middle)</td>
+            <td>$4600</td>
+            <td><a data-bs-toggle="popover" data-bs-title="Заголовок всплывающего окна" data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"><i class="bi bi-info fa-lg"></i></a></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Private</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-          </tr>
-        </tbody>
-
-        <tbody>
-          <tr>
-            <th scope="row" class="text-start">Permissions</th>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Front-devs</th>
+            <td>frontend (lead) + frontend (senior) + qa (middle) + ui/ux (middle) + project manager (senior)</td>
+            <td>$5000</td>
+            <td><a data-bs-toggle="popover" data-bs-title="Заголовок всплывающего окна" data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"><i class="bi bi-info fa-lg"></i></a></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Back-devs</th>
+            <td>2 - backend (middle) + 2 - backend (senior) + qa (middle)</td>
+            <td>$4600</td>
+            <td><a data-bs-toggle="popover" data-bs-title="Заголовок всплывающего окна" data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"><i class="bi bi-info fa-lg"></i></a></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Unlimited members</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Back-devs</th>
+            <td>2 - backend (middle) + 2 - backend (senior) + qa (middle)</td>
+            <td>$4600</td>
+            <td><a data-bs-toggle="popover" data-bs-title="Заголовок всплывающего окна" data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"><i class="bi bi-info fa-lg"></i></a></td>
           </tr>
           <tr>
-            <th scope="row" class="text-start">Extra security</th>
-            <td></td>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <th scope="row" class="text-start">Back-devs</th>
+            <td>2 - backend (middle) + 2 - backend (senior) + qa (middle)</td>
+            <td>$4600</td>
+            <td><a data-bs-toggle="popover" data-bs-title="Заголовок всплывающего окна" data-bs-content="А вот и потрясающий контент. Это очень увлекательно. Верно?"><i class="bi bi-info fa-lg"></i></a></td>
           </tr>
         </tbody>
       </table>
@@ -671,12 +662,6 @@
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a>
-    <script>
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-});
-    </script>
     <!-- ========================= JS here ========================= -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -699,6 +684,14 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     </script>
     <!-- ========================= Redirect to 101.html ========================= -->
 
+    <script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 
 </html>
