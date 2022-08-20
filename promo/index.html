@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Massive - Multipurpose HTML Template.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.svg" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================= CSS here ========================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="../assets/css/animate.css" />
+    <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+    <style>
+    
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+    </style>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header">
+        <div class="navbar-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img class="logo1" src="../assets/images/logo/big-logo.png" alt="Logo" style="margin-top: -10px;" />
+                                &nbsp;Хочу в IT
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="index.html">Главная</a></li>
+                                    <li class="nav-item"><a href="about.html">О нас</a></li>
+                                    <li class="nav-item"><a href="join.html">Карьера</a></li>
+                                    <li class="nav-item"><a href="#">Компаниям</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="price.html">Цены</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li class=""><a href="why.html" class="text-danger">Почему мы</a></li>
+                                            <li><a href="docs.html">Документы</a></li>
+                                            <li><a href="access/" class="text-danger">Доступы</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a href="#">Соискаителям</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="vacancy.html">Вакансии</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a href="upload.html">Загрузить резюме</a></li>
+                                            <li><a href="invate.html" class="text-danger">Оставить рекомендацию</a></li>
+                                            <li><a href="feedback.html" class="text-danger">Оставить отзыв</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a href="#">Блог</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html" class=" text-truncate">Все статьи</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a href="blog.html?postid=5" class=" text-truncate">Наши ошибки это наш опыт</a></li>
+                                            <li><a href="blog.html?postid=4" class=" text-truncate">Удаленная работа</a></li>
+                                            <li><a href="blog.html?postid=3" class=" text-truncate">Современные тенденции в управлении персоналом</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            <div class="button">
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</a>
+                            </div>
+                            </div>
+
+                        </nav>
+                        <!-- navbar -->
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- navbar area -->
+    </header>
+    <!-- End Header Area -->
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+        <div class="button">
+            <a class="btn" data-bs-dismiss="modal" aria-label="Закрыть">Закрыть</a>
+        </div>
+      </div>
+      <div class="modal-body">
+  <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Фамилия" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Имя" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Telegram</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="telegram" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Компания <span class="text-muted">(Опционально)</span></label>
+              <input type="text" class="form-control" id="address" placeholder="Моя компания">
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+              
+            <div class="col-md-5">
+              <label for="country" class="form-label">Страна</label>
+              <select class="form-select" id="country" required>
+                <option value="">Выбрать...</option>
+                <option>Беларусь</option>
+                <option>Россия</option>
+                <option>Грузия</option>
+                <option>другая...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <label for="username" class="form-label">Телефон</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">+</span>
+                <input type="text" class="form-control" id="username" placeholder="375001234567" required>
+              <div class="invalid-feedback">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="state" class="form-label">Тариф</label>
+              <select class="form-select" id="state" required>
+                <option value="">Выбрать...</option>
+                <option>Месячный</option>
+                <option>Стандартный</option>
+                <option>Командный</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="zip" class="form-label">Напишите свой вопрос</label>
+              <textaria rows="5" class="form-control" id="zip" placeholder="" style="height:164px;" required></textaria>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+            <div class="button">
+                <button class="btn w-100" type="submit">Отправить</button>
+            </div>
+        </form>
+
+        </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Start Hero Area -->
+    <section class="hero-area">
+        <!-- Single Slider -->
+        <div class="hero-inner">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 co-12">
+                        <div class="home-slider">
+                            <div class="hero-text">
+                                <h1 class="wow fadeInUp" data-wow-delay=".3" style="font-size: 56px;">Хочу в IT</h1>
+                                <p class="wow fadeInUp" data-wow-delay=".5s" style="font-size: 21px;">Рекрутинговое агентство по профессиональному <br> подбору IT-специалистов любого грейда и любой сложности.<br>  Мы соберем Вашу команду мечты!</p>
+                                <div class="button wow fadeInUp" data-wow-delay=".7s">
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn">Оставить заявку</a>
+                                </div>
+                                <div class="button wow fadeInUp" data-wow-delay=".9s">
+                                    <a href="vacancy.html" class="btn">Посмотреть открытые вакансии</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Single Slider -->
+    </section>
+    <!--/ End Hero Area -->
+
+    <!-- Start Service Area -->
+    <section class="services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title align-left">
+                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Почему мы?</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".4s">Работаем с применением различных техник в части поиска и подбора персонала, используем как классические инструменты, так и современные методики для оценки и поиска сотрудников.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="single-head">
+                <img class="service-patern wow fadeInLeft" data-wow-delay=".5s"
+                    src="../assets/images/service/service-patern.png" alt="#">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".2s">
+                            <h3><a href="#">Качество</a></h3>
+                            <div class="icon">
+                                <i class="bi bi-trophy-fill fa-lg"></i>
+                            </div>
+                            <p>Мы знаем где искать опытных и квалифицированных сотрудников, которые в состоянии решить Ваши задачи.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".4s">
+                            <h3><a href="service-single.html">Скорость</a></h3>
+                            <div class="icon">
+                                <i class="bi bi-speedometer fa-lg"></i>
+                            </div>
+                            <p>Помимо качественного подбора мы еще и максимально быстрые! Для нас приоритетна каждая вакансия партнера.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".6s">
+                            <h3><a href="service-single.html">Результативность</a></h3>
+                            <div class="icon">
+                                <i class="bi bi-briefcase-fill fa-lg"></i>
+                            </div>
+                            <p>Мы ведем поиск специалистов разного уровня сложности, опираясь на наши опыт и профессионализм.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-service wow fadeInUp" data-wow-delay=".8s">
+                            <h3><a href="service-single.html">Гибкий подход</a></h3>
+                            <div class="icon">
+                                <i class="bi bi-bug-fill fa-lg"></i>
+                            </div>
+                            <p>Мы учитываем как профессиональные навыки, так и личностные качества сотрудника и микроклимат в компании.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Services Area -->
+
+    <!-- Start About Us Area -->
+    <section class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="about-left">
+                        <div class="section-title align-left">
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Как мы работаем?</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".5s">Мы оперативно ищем кандидатов для Вас. И вот как мы это делаем:</p>
+                        </div>
+                        <div class="about-tab wow fadeInUp" data-wow-delay=".4s">
+                            <!-- Nav Tab  -->
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#t-tab1"
+                                        role="tab">Заявка</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab2"
+                                        role="tab">Поиск</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab3"
+                                        role="tab">Интервью</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#t-tab4"
+                                        role="tab">Кандидат</a></li>
+                            </ul>
+                            <!--/ End Nav Tab -->
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Tab 1 -->
+                                <div class="tab-pane fade show active" id="t-tab1" role="tabpanel">
+                                    <div class="tab-content">
+                                        <p>Вы озвучиваете, кто Вам нужен и что он/она должны уметь делать, с каким стеком работать и какой бэкграунд необходим.</p>
+                                        <ul>
+                                            <li><i class="lni lni-checkmark-circle"></i> Подписываем договор</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Определяемся с тарифом</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Составляем ТЗ по вакансии</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Знакомимся с лидами</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/ End Tab 1 -->
+                                <!-- Tab 2 -->
+                                <div class="tab-pane fade" id="t-tab2" role="tabpanel">
+                                    <div class="tab-content">
+                                        <p>Мы выкладываем вакансию на множестве площадок, актуализируем свою базу и приступаем к поиску кандидатов. Мы используем множество каналов и разные методы, чтобы сделать все бысто.</p>
+                                        <p>Уже через несколько дней мы предоставляем Вам первых кандидатов и начинаем проводить интервью. Когда нужный кандидат найден, мы отправляем его к Вам на итоговое согласование.</p>
+
+                                    </div>
+                                </div>
+                                <!--/ End Tab 2 -->
+                                <!-- Tab 3 -->
+                                <div class="tab-pane fade" id="t-tab3" role="tabpanel">
+                                    <div class="tab-content">
+                                        <p>Мы с Вами определяемся по временным слотам для интервью и проводим второй этап интервью, техническое ревью и принимаем итоговое решение.<br>К концу этого этапа у нас есть:</p>
+                                        <ul>
+                                            <li><i class="lni lni-checkmark-circle"></i> Несколько претендентов на оффер</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Статистика по работе</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/ End Tab 3 -->
+                                <!-- Tab 4 -->
+                                <div class="tab-pane fade" id="t-tab4" role="tabpanel">
+                                    <div class="tab-content">
+                                        <p>Завершающий этап. Вы делаете кандидату оффер и у Вас в штате пополнение! Ура! Осталось только:</p>
+                                        <ul>
+                                            <li><i class="lni lni-checkmark-circle"></i> Подписать акт</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Оплатить услугу (после выхода кандидата)</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> Адаптировать кандидат в своем коллективе*</li>
+                                            <li><i class="lni lni-checkmark-circle"></i> В течение 60 дней действует гарантия</li>
+                                        </ul>
+                                        <hr>
+                                        *мы также можем помочь с этим вопросом.
+                                    </div>
+                                </div>
+                                <!--/ End Tab 4 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="about-right wow fadeInRight" data-wow-delay=".4s">
+                        <img src="../assets/images/about/about-img-1.jpg" style="border-radius: 2em 0 0 2em" width="120%" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End About Us Area -->
+
+    <!-- Start Intro Video Area -->
+ <!--   <section class="intro-video-area overlay section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title white-text">
+                        <span class="wow fadeInDown" data-wow-delay=".2s">Create your own experience</span>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Ready to grow faster?</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                            Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-video-play">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-12">
+                                <div class="play-thumb wow zoomIn" data-wow-delay=".2s">
+                                    <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                                        class="glightbox video"><i class="lni lni-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section> -->
+    <!-- End Intro Video Area -->
+
+    <!-- Start Pricing Table Area -->
+    <section class="pricing-table section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Наше предложение компаниям</h2>
+                        <span class="text-primary wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">тарифы</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".2s" style="border-radius: 2em">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Месячный&nbsp;<a href="price.html?tab=tmtab" ><sup class="bi bi-box-arrow-up-right text-primary"></sup></a></h4>
+                            <div class="price">
+                                <p class="amount">$3500<span class="duration"> в месяц</span></p>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>До 5 кандидатов в месяц</li>
+                            <li>Без предоплаты</li>
+                            <li>Любая сложность</li>
+                            <li>Гибкий подход</li>
+                        </ul>
+                        <!-- End Table List -->
+                        <!-- Table Bottom -->
+                        <div class="button">
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</a>
+                        </div><br>
+                        <hr>
+                            <div class="price">
+                                <span class="duration"> рекомендуется при постоянном наборе</span>
+                            </div>                        <!-- End Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".4s" style="border-radius: 2em">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Стандартный&nbsp;<a href="price.html?tab=tstab" ><sup class="bi bi-box-arrow-up-right text-primary"></sup></a></h4>
+                            <div class="price">
+                                <p class="amount">от $850<span class="duration"> за вакансию</span></p>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>Быстрый подбор</li>
+                            <li>Предоплата 15%</li>
+                            <li>Зависит от сложности</li>
+                            <li>Строгая схема</li>
+                        </ul>
+                        <!-- End Table List -->
+                        <!-- Table Bottom -->
+                        <div class="button">
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</a>
+                        </div><br>
+                        <hr>
+                            <div class="price">
+                                <span class="duration"> рекомендуется при поиске 1 специалиста</span>
+                            </div>   
+                        <!-- End Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Table -->
+                    <div class="single-table wow fadeInUp" data-wow-delay=".6s" style="border-radius: 2em">
+                        <!-- Table Head -->
+                        <div class="table-head">
+                            <h4 class="title">Команда&nbsp;<a href="price.html?tab=tttab" ><sup class="bi bi-box-arrow-up-right text-primary"></sup></a></h4>
+                            <div class="price">
+                                <p class="amount">от 2% ЗП<sup class="text-muted" style="font-style: italic"> годовой</sup><span class="duration"> за специалиста</span></p>
+                            </div>
+                        </div>
+                        <!-- End Table Head -->
+                        <!-- Table List -->
+                        <ul class="table-list">
+                            <li>Поиск менеджеров и лидов</li>
+                            <li>Подбор сплоченной команды</li>
+                            <li>Не более 5 кандидатов в месяц</li>
+                            <li>Оплата на день выхода кандидата</li>
+                        </ul>
+                        <!-- End Table List -->
+                        <!-- Table Bottom -->
+                        <div class="button">
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</a>
+                        </div><br>
+                        <hr>
+                            <div class="price">
+                                <span class="duration"> рекомендуется когда срочно нужна команда</span>
+                            </div>   
+                        <!-- End Table Bottom -->
+                    </div>
+                    <!-- End Single Table-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ End Pricing Table Area -->
+
+    <section class="section free-version-banner vh-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title mb-60">
+                        <span class="text-white wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">карьера в HR</span>
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Набираем и обучаем начинающих IT-рекрутеров</h2>
+                        <p class="text-white wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">Мы обучаем начинающих специалистов на практике, даем им реальные задачи и помогаем развиваться в начале карьерного пути.</p>
+
+                        <div class="button">
+                            <a href="join.html" rel="nofollow" class="btn wow fadeInUp" data-wow-delay=".8s">Присоединиться к нам</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Latest News Area -->
+    <div class="latest-news-area section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Блог</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".7s">Последние новости и посты</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".2s">
+                        <div class="image" style="height: 320px">
+                            <img class="thumb" src="../assets/images/blog/blog-label-6.jpg" height="380px" alt="#">
+                            <div class="meta-details">
+                                &nbsp;<i class="bi bi-calendar-date text-white fa-lg"></i> <span>03 aug</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog.html?postid=5">Наши ошибки - это наш опыт</a></h4>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".4s">
+                        <div class="image" style="height: 280px">
+                            <img class="thumb" src="../assets/images/blog/blog-label-5.jpg" height="380px" alt="#">
+                            <div class="meta-details">
+                                &nbsp;<i class="bi bi-calendar-date text-white fa-lg"></i> <span>01 aug</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog.html?postid=4">Удаленная работа</a></h4>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single News -->
+                    <div class="single-news wow fadeInUp" data-wow-delay=".6s">
+                        <div class="image" style="height: 220px">
+                            <img class="thumb" src="../assets/images/blog/blog-label-2.jpg" height="380px" alt="#">
+                            <div class="meta-details">
+                                &nbsp;<i class="bi bi-calendar-date text-white fa-lg"></i> <span>16 jul</span>
+                            </div>
+                        </div>
+                        <div class="content-body">
+                            <h4 class="title"><a href="blog.html?postid=3">Современные тенденции в управлении персоналом</a></h4>
+                        </div>
+                    </div>
+                    <!-- End Single News -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Latest News Area -->
+
+    <section class="section free-version-banner-1 vh-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title mb-60">
+                        <span class="text-white wow fadeInDown" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">открытые вакансии</span>
+                        <h2 class="text-white wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Горящие вакансии наших партнеров</h2>
+                            <div class="container">               
+                                <a href="vacancy/react-abb/" class="badge my-1 py-1 mx-1 h1 bg-info  wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp; font-size: 16px;">React developer - 1</a>&nbsp;
+                                <a href="vacancy/java-abb/" class="badge my-1 mx-1 bg-white text-dark wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp; font-size: 16px;">Java developer - 5</a>&nbsp;
+                                <a href="vacancy/devops-abb/" class="badge my-1 mx-1 bg-primary wow fadeInUp" data-wow-delay=".7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp; font-size: 16px;">DevOps Engineer - 4</a>&nbsp;
+                                <a href="vacancy/dba-abb/" class="badge  my-1 mx-1 bg-warning wow fadeInUp" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; font-size: 16px;">DB Administrator - 1</a>&nbsp;
+                                <a href="vacancy/ea-abb/" class="badge  my-1 mx-1 wow fadeInUp" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp; font-size: 16px;background-color:#6f42c1">Enterprise Architect - 1</a>&nbsp;
+                                <a href="vacancy/python-dev/" class="badge  my-1 mx-1 bg-success wow fadeInUp" data-wow-delay=".9s" style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp; font-size: 16px;">Python Преподаватель - 1</a>&nbsp;
+                                <a href="vacancy/sadmin-abb/" class="badge  my-1 mx-1 bg-danger wow fadeInUp" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp; font-size: 16px;">System Administrator - 1</a>&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Brand Area -->
+    <div class="brand-area section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-12">
+                    <div class="section-title align-left wow fadeInLeft" data-wow-delay=".2s">
+                        <span>наши партнеры</span>
+                        <h2>Мы уже работаем с компаниями:</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div class="brand-logo-wrapper wow fadeInRight" data-wow-delay=".4s">
+                        <ul class="brand-list liststyle d-flex flex-wrap justify-content-center">
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/seedilon-logo.svg" height="66px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/alfabank-logo.png" height="124px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/Premiumsoft-logo.jfif" height="66px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/yoursoft-logo.svg" height="66px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/deriv-logo.svg" height="66px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../assets/images/clients/stormnet-logo.webp" height="66px" width="124px" alt="Brand Logo Images">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Brand Area -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Middle Top -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>Компаниям</h3>
+                            <ul>
+                                <li><a href="price.html">Цены</a></li>
+                                <li><a href="why.html">Почему мы</a></li>
+                                <li><a href="docs.html">Документы</a></li>
+                                <li><a href="access/">Доступы</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>Соискателям</h3>
+                            <ul>
+                                <li><a href="vacancy.html">Вакансии</a></li>
+                                <li><a href="upload.html">Загрузить резюме</a></li>
+                                <li><a href="invate.html">Рекомендовать</a></li>
+                                <li><a href="feedback.html">Оставить отзыв</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>О нас</h3>
+                            <ul>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="about.html#contacts">Контакты</a></li>
+                                <li><a href="join.html">Работа у нас</a></li>
+                                <li><a href="promo/">Спец-предлолжения</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link text-truncate">
+                            <h3>Блог</h3>
+                            <ul>
+                                <li><a href="blog.html">Все статьи</a></li>
+                                <li><a href="blog.html?postid=5">Наши ошибки - это наш опыт</a></li>
+                                <li><a href="blog.html?postid=4">Удаленная работа</a></li>
+                                <li><a href="blog.html?postid=3">Современные тенденции в управлении персоналом</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <!-- Single Widget -->
+                        <div class="f-about single-footer text-center">
+                            <div class="logo">
+                                <a href="index.html" class="text-center"><img src="../assets/images/logo/big-logo.png" alt="Logo" style="width: 56%"></a>
+                            </div>
+                            <span class="text-center"><big>Рекрутинговое агентство <strong>"Хочу в IT"</strong> </big></span>
+                            <div class="footer-social">
+                                        <div class="button w-100">
+            <a class="btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</a>
+        </div>
+                            </div>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Middle -->
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="d-flex flex-column flex-md-row justify-content-between mx-auto py-2 mt-2 border-top border-secondary">
+<ul class="d-flex justify-content-center order-md-last social-icons my-auto mx-5" style="margin-top: -12px">
+              <li  data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><a class="twitter" href="https://twitter.com/want2it"><i class="fa fa-twitter fa-lg"></i></a></li>   
+            <!--  <li title="Facebook"><a class="facebook" href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li> -->
+            <!--  <li title="Vkontakte"><a class="vkontakte" href="#"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a></li> -->
+              <li  data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram"><a class="telegram" href="https://t.me/want2it"><i class="fa fa-telegram fa-lg"></i></a></li>   
+              <li  data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"><a class="linkedin" href="https://linkedin.com/company/want2it/"><i class="fa fa-linkedin fa-lg"></i></a></li> 
+              <li  data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"><a class="facebook" href="https://facebook.com/want2it.online/"><i class="fa fa-facebook fa-lg"></i></a></li>
+              <li  data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><a class="instagram" href="https://instagram.com/want2it/"><i class="fa fa-instagram fa-lg"></i></a></li>   
+            </ul>
+      <p class="my-auto mx-5 text-center">&copy; 2022 <span class="lang-49" data-label="LLC 'Want 2 IT'">ООО "Хочу Вайти"</span> <small style="opacity: 0.5">УНП192847179</small></p>
+
+      </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+
+
+    <script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+});
+    </script>
+    <!-- ========================= JS here ========================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/count-up.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/tiny-slider.js"></script>
+    <script src="../assets/js/glightbox.min.js"></script>
+    <script src="../assets/js/imagesloaded.min.js"></script>
+    <script src="../assets/js/isotope.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript">
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
+    </script>
+
+    <!-- ========================= Redirect to 101.html ========================= -->
+    <script type="text/javascript">
+        setTimeout(function(){
+                window.location.href = '101.html';
+            }, 200);
+    </script>
+</body>
+
+</html>
